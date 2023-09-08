@@ -10,6 +10,7 @@ import java.util.List;
 @AllArgsConstructor
 @EqualsAndHashCode
 @ToString
+@Builder
 public class Course {
     private Long id;
     private String name;
