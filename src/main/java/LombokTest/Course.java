@@ -17,6 +17,9 @@ public class Course {
     private Teacher teacher;
     private List<Student> students;
 
+    @With
+    private String additionalInfo;
+
     public void setId(Long id) {
         this.id = id;
     }

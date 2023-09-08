@@ -12,6 +12,8 @@ public class Teacher {
     private Long id;
     private String name;
     private String subject;
+    @With
+    private String additionalInfo;
 
 
 }

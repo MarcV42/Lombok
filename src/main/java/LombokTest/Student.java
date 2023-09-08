@@ -1,18 +1,21 @@
 package LombokTest;
 
-
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.With;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode
-@ToString
 @Builder
 public class Student {
-
     private Long id;
-    private  String name;
+    private String name;
     private String address;
     private double grade;
+
+    @With
+    private String additionalInfo;
 }
